@@ -3,10 +3,11 @@ an easy, lazy, & small [neo]vim package manager hacked from plug
 - Lazier than [Lazy.nvim](https://github.com/folke/lazy.nvim)
 - More minimal than [vim-plug](https://github.com/junegunn/vim-plug)
 - Package based like [pckr.nvim](https://github.com/lewis6991/pckr.nvim)
+- && a tiny bit more 😁 hard core than a wrapper for [vim.pack](https://neovim.io/doc/user/pack/)
 
 ## Features
 
-- Works with all version os Neovim and Vim 8.0039+.
+- Works with all version of Neovim and Vim 8.0039+.
 - Super fast parallel installs and updates.
 - Lazy load functions and/or filetypes.
 - Only one file with no dependencies.
@@ -21,7 +22,7 @@ an easy, lazy, & small [neo]vim package manager hacked from plug
 
 ## Installation
 
-#### Linux, macOS, UNIX
+#### Linux, macOS, UNIX, WSL
 
 # Neovim
 ```
@@ -33,7 +34,7 @@ curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/compackd.vim
 curl -fLo ~/.vim/autoload/compackd.vim --create-dirs  https://raw.githubusercontent.com/josephtingiris/compackd/main/autoload/compackd.vim
 ```
 
-#### Windows (PowerShell)
+#### Windows (PowerShell:)
 
 ```powershell
 iwr -useb https://raw.githubusercontent.com/josephtingiris/compackd/main/autoload/pack.vim | ni $HOME/vimfiles/autoload/pack.vim -Force
@@ -41,7 +42,7 @@ iwr -useb https://raw.githubusercontent.com/josephtingiris/compackd/main/autoloa
 
 ## Usage
 
-Add a section to your `~/.vimrc` (or `~/.config/nvim/init.vim` for Neovim), or add individual files to your `plugin/` directory.
+Add a section to your `~/.vimrc` (or `~/.config/nvim/init.vim` for Neovim), and/or add individual files to your `plugin/` directory.
 
 For example,
 
